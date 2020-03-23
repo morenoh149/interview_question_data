@@ -1,0 +1,9 @@
+<h1>Movie search</h1>
+
+<a href="/">Home</a>
+<h2>Movie Details</h2>
+
+{% if movie %}
+  <p>{{ movie['title'] }}</p>
+  <p>{{ movie['description'] }}</p>
+{% endfor %}
