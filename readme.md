@@ -8,7 +8,7 @@
 - to run the api study the flask quickstart https://flask.palletsprojects.com/en/1.1.x/quickstart/
 - Within this repo you will find a flask api.
 - The back-end contain several errors, so you will need to do some debugging to ensure is working correctly.
-- A data model is provided. Recreate this using a sql script and provide instructions for how to load it into sqlite.
+- A data model is provided in model.png Recreate this using a sql script and provide instructions for how to load it into sqlite.
 - Provide a seed.sql script that populates the database with somewhat realistic data for testing.
   - you may use provide a seed.py using https://pypi.org/project/Faker/ if you prefer
 - The api should respond at `/` with plain text describing the api.
