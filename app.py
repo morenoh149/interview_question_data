@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('dau')
+@app.route('/dau')
 def dau():
     # calculate and return the daily active users for the whole month
     resultset = ...
