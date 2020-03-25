@@ -1,4 +1,4 @@
-from flask import Flask, escape, request, render_template, json
+from flask import Flask, escape, request, render_template, jsonify
 import json
 
 app = Flask(__name__)
@@ -11,4 +11,4 @@ def index():
 def dau():
     # calculate and return the daily active users for the whole month
     resultset = ...
-    return json.jsonify(resultset)
+    return jsonify(resultset)
