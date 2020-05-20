@@ -5,19 +5,17 @@
 
 ## Instructions
 
-- to run the api study the flask quickstart https://flask.palletsprojects.com/en/1.1.x/quickstart/ , then
+- to run the api study the flask quickstart https://flask.palletsprojects.com/en/1.1.x/quickstart/ , and the tutorial upto step 5 https://flask.palletsprojects.com/en/1.1.x/tutorial/ (upto `Templates`), then
   - `$ pipenv shell`
   - `$ pipenv install`
   - `$ flask run`
   - the api will be running at `http://127.0.0.1:5000`, you can confirm by running `$ curl 127.0.0.1:5000`
 - Within this repo you will find a flask api.
 - The back-end contains several errors, so you will need to do some debugging to ensure it is working correctly.
-- A data model is provided in model.png Recreate this using a sql script named `schema.sql`
+- A data model is provided in model.png Recreate this by completing the script at `flaskr/schema.sql`.
   - If you do not understand how to read the diagram install https://dbeaver.io and visualize a database you are familiar with
-  - We should be able to load your solution by running `$ sqlite3 my.db < schema.sql`
-- Provide a seed script that populates the database with test data for testing. You may do this in one of 2 ways:
-  - provide a `seed.py` script using https://pypi.org/project/Faker/ . You may use an orm such as sqlalchemy if you want. We can run `$ python seed.py`.
-  - provide a `seed.sql` script. We can run `$ sqlite3 my.db < seed.sql` 
+  - We should be able to load your schema by running `$ flask init-db` (OR `$ sqlite3 my.db < flaskr/schema.sql`
+- Complete the seed command using https://pypi.org/project/Faker/ . This is at `flaskr/db.py#seed_db`. We should be able to run `$ flask seed-db` to populate the database.
 - The api should respond at `/` with plain text describing the api.
 - the api should return valid json at `/dau` with the daily active users
   - a daily active user is a user that has done some activity within that day (create an event, comment, create a  thread or rsvp to an event).
