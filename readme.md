@@ -5,9 +5,12 @@
 
 ## Instructions
 
-- to run the api study the flask quickstart https://flask.palletsprojects.com/en/1.1.x/quickstart/ , and the tutorial upto step 5 https://flask.palletsprojects.com/en/1.1.x/tutorial/ (upto `Templates`), then
-  - `$ pipenv shell`
-  - `$ pipenv install`
+- to run the api study the flask quickstart https://flask.palletsprojects.com/en/1.1.x/quickstart/ , and the tutorial upto step 5 https://flask.palletsprojects.com/en/1.1.x/tutorial/ (upto `Templates`)
+- initialize the [virtual environment](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
+  - `$ virtualenv venv`
+  - `$ source venv/bin/activate`
+  - `$ pip install -r requirements.txt`
+- run the api
   - `$ flask run`
   - the api will be running at `http://127.0.0.1:5000`, you can confirm by running `$ curl 127.0.0.1:5000`
 - Within this repo you will find a flask api.
